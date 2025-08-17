@@ -1,0 +1,86 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		quizzing_system_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY FLEX10K
+set_global_assignment -name DEVICE "EPF10K10TC144-3"
+set_global_assignment -name TOP_LEVEL_ENTITY quizzing_system
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:13:20  NOVEMBER 11, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "7.2 SP3"
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Design Compiler"
+set_global_assignment -name EDA_INPUT_VCC_NAME VDD -section_id eda_design_synthesis
+set_global_assignment -name EDA_LMF_FILE altsyn.lmf -section_id eda_design_synthesis
+set_global_assignment -name EDA_INPUT_DATA_FORMAT EDIF -section_id eda_design_synthesis
+set_global_assignment -name EDA_SIMULATION_TOOL "Active-HDL (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VERILOG -section_id eda_simulation
+set_global_assignment -name EDA_TIMING_ANALYSIS_TOOL "PrimeTime (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VERILOG -section_id eda_timing_analysis
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 3
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VERILOG_FILE quizzing_system.v
+set_location_assignment PIN_141 -to led_com
+set_location_assignment PIN_7 -to active_team[0]
+set_location_assignment PIN_8 -to active_team[1]
+set_location_assignment PIN_9 -to active_team[2]
+set_location_assignment PIN_10 -to active_team[3]
+set_location_assignment PIN_55 -to clk
+set_location_assignment PIN_111 -to col[0]
+set_location_assignment PIN_110 -to col[1]
+set_location_assignment PIN_109 -to col[2]
+set_location_assignment PIN_102 -to col[3]
+set_location_assignment PIN_101 -to col[4]
+set_location_assignment PIN_100 -to col[5]
+set_location_assignment PIN_99 -to col[6]
+set_location_assignment PIN_98 -to col[7]
+set_location_assignment PIN_60 -to correct
+set_location_assignment PIN_14 -to judging_time
+set_location_assignment PIN_63 -to master_reset
+set_location_assignment PIN_62 -to reset
+set_location_assignment PIN_88 -to row[0]
+set_location_assignment PIN_89 -to row[1]
+set_location_assignment PIN_90 -to row[2]
+set_location_assignment PIN_91 -to row[3]
+set_location_assignment PIN_92 -to row[4]
+set_location_assignment PIN_95 -to row[5]
+set_location_assignment PIN_96 -to row[6]
+set_location_assignment PIN_97 -to row[7]
+set_location_assignment PIN_23 -to seg[6]
+set_location_assignment PIN_26 -to seg[5]
+set_location_assignment PIN_27 -to seg[4]
+set_location_assignment PIN_28 -to seg[3]
+set_location_assignment PIN_29 -to seg[2]
+set_location_assignment PIN_30 -to seg[1]
+set_location_assignment PIN_31 -to seg[0]
+set_location_assignment PIN_47 -to teamA
+set_location_assignment PIN_48 -to teamB
+set_location_assignment PIN_49 -to teamC
+set_location_assignment PIN_51 -to teamD
+set_location_assignment PIN_13 -to timeup
+set_location_assignment PIN_18 -to buzzer_locked
+set_location_assignment PIN_59 -to end_quiz
